@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "Polyline+TransformableAttributes.h"
+#import <CoreLocation/CoreLocation.h>
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -28,9 +30,15 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
+    // creates a new polyline object when app goes into the background, and stores it into core data.
     NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Polyline" inManagedObjectContext:self.managedObjectContext];
     Polyline *polyline = (Polyline *)object;
-    [polyline setCoordinates:@[@"a", @"b", @"c"]];
+
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:37.765 longitude:-122.419];
+    CLLocation *location2 = [[CLLocation alloc] initWithLatitude:37.7683 longitude:-122.4200];
+    CLLocation *location3 = [[CLLocation alloc] initWithLatitude:37.754 longitude:-122.4109];
+    [polyline setCoordinates:@[location, location2, location3]];
     NSError *error;
     if ([self.managedObjectContext save:&error]) {
         NSLog(@"Saved");
@@ -46,6 +54,7 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 
+    /*
     UILocalNotification *warning = [[UILocalNotification alloc] init];
     if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground) {
         // this is the first time we received this so increment the badge number
@@ -56,6 +65,7 @@
     warning.alertBody = @"Test";
     warning.userInfo = @{@"notificationName":@"myLocalNotification"};
     [[UIApplication sharedApplication] presentLocalNotificationNow:warning];
+     */
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -70,8 +80,14 @@
     NSError *error;
     id results = [self.managedObjectContext executeFetchRequest:request error:&error];
 
-    Polyline *polyline = (Polyline *)(results[0]);
-    NSArray *coordinates = polyline.coordinates;
+    if ([results count]) {
+        Polyline *polyline = (Polyline *)(results[0]);
+        NSArray *coordinates = polyline.coordinates;
+        int ct = 0;
+        for (CLLocation *loc in coordinates) {
+            NSLog(@"location %d: %@", ct++, loc);
+        }
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

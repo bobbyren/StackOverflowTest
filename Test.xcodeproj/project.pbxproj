@@ -28,6 +28,7 @@
 		9E9CB58F19A59882003EBFFF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CB58D19A59881003EBFFF /* Model.xcdatamodeld */; };
 		9E9CB59219A598E6003EBFFF /* Polyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CB59119A598E6003EBFFF /* Polyline.m */; };
 		9E9CB59619A5990E003EBFFF /* Polyline+TransformableAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CB59519A5990E003EBFFF /* Polyline+TransformableAttributes.m */; };
+		9E9F19B719AE6D9300DE3F27 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9F19B619AE6D9300DE3F27 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		9E9CB59119A598E6003EBFFF /* Polyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polyline.m; sourceTree = "<group>"; };
 		9E9CB59419A5990E003EBFFF /* Polyline+TransformableAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Polyline+TransformableAttributes.h"; sourceTree = "<group>"; };
 		9E9CB59519A5990E003EBFFF /* Polyline+TransformableAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Polyline+TransformableAttributes.m"; sourceTree = "<group>"; };
+		9E9F19B619AE6D9300DE3F27 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E9F19B719AE6D9300DE3F27 /* CoreLocation.framework in Frameworks */,
 				9E2E2A521979BE3D004854BB /* CoreGraphics.framework in Frameworks */,
 				9E2E2A541979BE3D004854BB /* UIKit.framework in Frameworks */,
 				9E2E2A501979BE3D004854BB /* Foundation.framework in Frameworks */,
@@ -124,6 +127,7 @@
 		9E2E2A4E1979BE3D004854BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E9F19B619AE6D9300DE3F27 /* CoreLocation.framework */,
 				9E2E2A4F1979BE3D004854BB /* Foundation.framework */,
 				9E2E2A511979BE3D004854BB /* CoreGraphics.framework */,
 				9E2E2A531979BE3D004854BB /* UIKit.framework */,
