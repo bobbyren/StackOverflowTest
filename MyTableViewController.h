@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyTableViewController.h
 //  Test
 //
 //  Created by Bobby Ren on 7/18/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MyTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
