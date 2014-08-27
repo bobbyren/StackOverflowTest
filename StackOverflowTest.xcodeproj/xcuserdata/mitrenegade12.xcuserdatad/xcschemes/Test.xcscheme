@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9E2E2A4B1979BE3D004854BB"
-               BuildableName = "Test.app"
-               BlueprintName = "Test"
-               ReferencedContainer = "container:Test.xcodeproj">
+               BuildableName = "StackOverflowTest.app"
+               BlueprintName = "StackOverflowTest"
+               ReferencedContainer = "container:StackOverflowTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9E2E2A6C1979BE3D004854BB"
-               BuildableName = "TestTests.xctest"
-               BlueprintName = "TestTests"
-               ReferencedContainer = "container:Test.xcodeproj">
+               BuildableName = "StackOverflowTestStackOverflowTests.xctest"
+               BlueprintName = "StackOverflowTestStackOverflowTests"
+               ReferencedContainer = "container:StackOverflowTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9E2E2A4B1979BE3D004854BB"
-            BuildableName = "Test.app"
-            BlueprintName = "Test"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "StackOverflowTest.app"
+            BlueprintName = "StackOverflowTest"
+            ReferencedContainer = "container:StackOverflowTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9E2E2A4B1979BE3D004854BB"
-            BuildableName = "Test.app"
-            BlueprintName = "Test"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "StackOverflowTest.app"
+            BlueprintName = "StackOverflowTest"
+            ReferencedContainer = "container:StackOverflowTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9E2E2A4B1979BE3D004854BB"
-            BuildableName = "Test.app"
-            BlueprintName = "Test"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "StackOverflowTest.app"
+            BlueprintName = "StackOverflowTest"
+            ReferencedContainer = "container:StackOverflowTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
