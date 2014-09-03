@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0EA91B19B75DB50072166D /* GPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0EA91A19B75DB50072166D /* GPSViewController.m */; };
 		9E2E2A501979BE3D004854BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2E2A4F1979BE3D004854BB /* Foundation.framework */; };
 		9E2E2A521979BE3D004854BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2E2A511979BE3D004854BB /* CoreGraphics.framework */; };
 		9E2E2A541979BE3D004854BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2E2A531979BE3D004854BB /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E0EA91919B75DB50072166D /* GPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSViewController.h; sourceTree = "<group>"; };
+		9E0EA91A19B75DB50072166D /* GPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSViewController.m; sourceTree = "<group>"; };
 		9E2E2A4C1979BE3D004854BB /* StackOverflowTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2E2A4F1979BE3D004854BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9E2E2A511979BE3D004854BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				9E9CB59319A598EF003EBFFF /* Core Data */,
 				9E2E2A5E1979BE3D004854BB /* AppDelegate.h */,
 				9E2E2A5F1979BE3D004854BB /* AppDelegate.m */,
+				9E0EA91919B75DB50072166D /* GPSViewController.h */,
+				9E0EA91A19B75DB50072166D /* GPSViewController.m */,
 				9E2E2A611979BE3D004854BB /* Main.storyboard */,
 				9E59D24219A3D03B00849D48 /* MyScrollViewController.h */,
 				9E59D24319A3D03B00849D48 /* MyScrollViewController.m */,
@@ -302,6 +307,7 @@
 				9E2E2A8C1979BEF9004854BB /* TestViewController.m in Sources */,
 				9E2E2A5C1979BE3D004854BB /* main.m in Sources */,
 				9E59D23F19A3CFD200849D48 /* TutorialView.m in Sources */,
+				9E0EA91B19B75DB50072166D /* GPSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

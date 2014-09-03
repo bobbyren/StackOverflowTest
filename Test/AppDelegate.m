@@ -30,23 +30,6 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-
-    // creates a new polyline object when app goes into the background, and stores it into core data.
-    NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Polyline" inManagedObjectContext:self.managedObjectContext];
-    Polyline *polyline = (Polyline *)object;
-
-    CLLocation *location = [[CLLocation alloc] initWithLatitude:37.765 longitude:-122.419];
-    CLLocation *location2 = [[CLLocation alloc] initWithLatitude:37.7683 longitude:-122.4200];
-    CLLocation *location3 = [[CLLocation alloc] initWithLatitude:37.754 longitude:-122.4109];
-    [polyline setCoordinates:@[location, location2, location3]];
-    NSError *error;
-    if ([self.managedObjectContext save:&error]) {
-        NSLog(@"Saved");
-    }
-    else {
-        NSLog(@"Error: %@", error);
-    }
-
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -76,18 +59,6 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Polyline"];
-    NSError *error;
-    id results = [self.managedObjectContext executeFetchRequest:request error:&error];
-
-    if ([results count]) {
-        Polyline *polyline = (Polyline *)(results[0]);
-        NSArray *coordinates = polyline.coordinates;
-        int ct = 0;
-        for (CLLocation *loc in coordinates) {
-            NSLog(@"location %d: %@", ct++, loc);
-        }
-    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
