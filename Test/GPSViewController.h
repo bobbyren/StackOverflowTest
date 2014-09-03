@@ -14,6 +14,7 @@
 {
     NSMutableArray *_locationsArray;
     Polyline *polyLine;
+    CLLocationManager *locationManager;
 }
 
 -(IBAction)didClickStartGPS:(id)sender;

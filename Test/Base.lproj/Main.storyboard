@@ -81,7 +81,6 @@
                                 </state>
                                 <connections>
                                     <action selector="didClickLoadCoordinates:" destination="pVX-Kx-V3R" eventType="touchUpInside" id="Nmv-4A-ozW"/>
-                                    <action selector="didClickSaveCoordinates:" destination="pVX-Kx-V3R" eventType="touchUpInside" id="cez-xN-YgB"/>
                                 </connections>
                             </button>
                         </subviews>

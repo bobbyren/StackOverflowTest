@@ -36,7 +36,7 @@
 }
 
 -(IBAction)didClickStartGPS:(id)sender {
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    locationManager = [[CLLocationManager alloc] init];
     [locationManager setDelegate:self];
     [locationManager startUpdatingLocation];
 }
